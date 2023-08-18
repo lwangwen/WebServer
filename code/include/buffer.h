@@ -1,12 +1,13 @@
 #ifndef BUFFER_H
 #define BUFFER_H
-#include <cstring>   //perror
+#include <cstring> 
 #include <iostream>
-#include <unistd.h>  // write
-#include <sys/uio.h> //readv
-#include <vector> //readv
+#include <unistd.h>  
+#include <sys/uio.h> 
+#include <vector>
 #include <atomic>
 #include <assert.h>
+
 class Buffer {
 public:
     Buffer(int initBuffSize = 1024);
